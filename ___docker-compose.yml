@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  app:
+    build: .
+    volumes:
+      - shared_volume:/app
+    ports:
+      - "8080:8080"
+
+volumes:
+  shared_volume:
